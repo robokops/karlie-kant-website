@@ -1,1 +1,0 @@
-// Performances text block
