@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://karliekant.github.io/sitemap.xml
