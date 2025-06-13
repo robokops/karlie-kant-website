@@ -87,6 +87,69 @@
         cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="50%" x="50%" dominant-baseline="middle" text-anchor="middle" font-size="24">✨</text></svg>') 16 16, auto;
       }
     }
+
+.show-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.show-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.show-images {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Einzelnes Bild (für Kantastique) */
+.single-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Bildgrid für mehrere Bilder */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Copyright Text */
+.image-copyright {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .show-section {
+    flex-direction: column;
+  }
+  
+  .show-images {
+    order: -1; /* Bilder immer oben auf Mobile */
+  }
+  
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+    
   </style>
 </head>
 <body>
@@ -105,24 +168,76 @@
     Wann ich das nächste Mal live zu sehen bin? 
     <a href="https://linktr.ee/karliekant" style="color: #fff; text-decoration: underline;">✨ Hier ✨</a> geht’s zu den Daten.</p>
 
-    <h2>Shows</h2>
+<h2>Shows</h2>
+
+<!-- KANTASTIQUE -->
+<div class="show-section">
+  <div class="show-images">
+    <div class="single-image">
+      <img src="karlie-kant-keglerheim-neukoelln-kantastique.webp" 
+           alt="Karlie Kant Drag Queen Performance bei Kantastique Show im Keglerheim Neukölln Berlin">
+      <div class="image-copyright">© Fotograf Name</div>
+    </div>
+  </div>
+  <div class="show-content">
     <p><strong>KANTASTIQUE</strong><br>
     Hertha trifft Haute Couture – und alle flippen aus. Meine erste eigene Show – geboren aus dem Drang, nach der Pandemie Drag Artists in Berlin Auftrittsmöglichkeiten zu bieten. Seitdem verwandeln wir das Keglerheim in Neukölln alle zwei Monate in einen Drag-Hotspot.</p>
+  </div>
+</div>
 
+<!-- PROVOKANT -->
+<div class="show-section">
+  <div class="show-content">
     <p><strong>PROVOKANT</strong><br>
     Saarbrücken – mein queerer Heimathafen (und ich bin die AIDA). Mit Provokant wollte ich etwas von der Energie, die ich durch Drag gefunden habe, in meine Heimat zurücktragen. Unsere Sommer- und Winter-Show im Jules Verne ist heiß begehrt – und hat einen kleinen queeren Kulturboom in der Stadt ausgelöst: etwa mit <a href="https://www.instagram.com/itsdraghabibi" target="_blank">Drag Habibi</a>, dem Show Format meiner Drag-Tochter <a href="https://www.instagram.com/twiga.is.twiga" target="_blank">Twiga</a>.</p>
+  </div>
+  <div class="show-images">
+    <div class="image-grid">
+      <img src="provokant-drag-show-saarbruecken-karlie-kant-2.webp" 
+           alt="Provokant Drag Show Saarbrücken mit Karlie Kant, Twiga und Z'iamanda Leurre Performance">
+      <img src="provokant-drag-show-saarbruecken-karlie-kant-3.webp" 
+           alt="Karlie Kant Drag Queen bei Provokant Show im Jules Verne Saarbrücken">
+      <img src="provokant-drag-show-saarbruecken-karlie-kant-1.webp" 
+           alt="Provokant queere Drag Show Saarbrücken Karlie Kant Performance auf der Bühne">
+      <img src="provokant-drag-show-saarbruecken-karlie-kant-4.webp" 
+           alt="Karlie Kant Drag Queen Provokant Show Saarbrücken LGBTQ Event">
+    </div>
+    <div class="image-copyright">© Fotograf Name</div>
+  </div>
+</div>
 
+<!-- DÜNN & DOOF -->
+<div class="show-section">
+  <div class="show-images">
+    <div class="image-grid">
+      <img src="Berlin-Drag-Queens-Karlie-Kant-Yvonne-Nightstand-Dünn-und-doof-2.webp" 
+           alt="Berlin Drag Queens Karlie Kant und Yvonne Nightstand bei Dünn und Doof Show Performance">
+      <img src="Berlin-Drag-Queens-Karlie-Kant-Yvonne-Nightstand-Dünn-und-doof-3.webp" 
+           alt="Dünn und Doof Drag Show Berlin mit Karlie Kant und Yvonne Nightstand Comedy Performance">
+      <img src="Berlin-Drag-Queens-Karlie-Kant-Yvonne-Nightstand-Dünn-und-doof-4.webp" 
+           alt="Karlie Kant Yvonne Nightstand Dünn und Doof Berlin Drag Show Entertainment">
+      <img src="Berlin-Drag-Queens-Karlie-Kant-Yvonne-Nightstand-Dünn-und-doof-1.webp" 
+           alt="Berlin Drag Queens Dünn und Doof Show Karlie Kant Yvonne Nightstand Brunch Event">
+    </div>
+    <div class="image-copyright">© Fotograf Name</div>
+  </div>
+  <div class="show-content">
     <p><strong>DÜNN & DOOF</strong><br>
     Ob Märchenwald, Toxic Masculinity, Saints & Sinners oder True Crime – kein Thema ist zu groß für diesen Drag-Fiebertraum. Zusammen mit <a href="https://www.instagram.com/yvonnenightstand" target="_blank">Yvonne Nightstand</a> habe ich Brunch-Editionen, Dinnerevents und sogar eine Show in einer echten Kirche umgesetzt. Wir sind mit dem Format mittlerweile auch über Berlins Grenzen hinaus unterwegs.</p>
+  </div>
+</div>
 
-   <p><strong>Plastic Productions x Kantastique</strong><br>
-  <p>
-  PPxK war ein einmaliges Crossover zwischen Kunst und Drag, zwischen durchinszenierter Show und ungefiltertem Ausdruck.
-<p>
-  Plastic Productions wurde von Johanne Björklund Larsen gegründet – einer meiner engsten Freundinnen und einer radikalen Stimme im Bereich Performancekunst. Was sie mit PP begonnen hat, war nie einfach nur Bühne, sondern immer auch Statement.
-</p>
-  Mit PPxK haben wir genau diesen Geist weitergeführt: ein Abend mit queeren Performer*innen, die nicht nur unterhalten, sondern herausfordern. Drag, Tanz, Körper, Haltung – live, roh, und voller Energie.
-</p>
+<!-- PLASTIC PRODUCTIONS x KANTASTIQUE -->
+<div class="show-section">
+  <div class="show-content">
+    <p><strong>Plastic Productions x Kantastique</strong><br>
+    PPxK war ein einmaliges Crossover zwischen Kunst und Drag, zwischen durchinszenierter Show und ungefiltertem Ausdruck.</p>
+    
+    <p>Plastic Productions wurde von Johanne Björklund Larsen gegründet – einer meiner engsten Freundinnen und einer radikalen Stimme im Bereich Performancekunst. Was sie mit PP begonnen hat, war nie einfach nur Bühne, sondern immer auch Statement.</p>
+    
+    <p>Mit PPxK haben wir genau diesen Geist weitergeführt: ein Abend mit queeren Performer*innen, die nicht nur unterhalten, sondern herausfordern. Drag, Tanz, Körper, Haltung – live, roh, und voller Energie.</p>
+  </div>
+</div>
         
     <h2>Buchen Sie mich</h2>
     <p><strong>Private Veranstaltungen:</strong><br>
