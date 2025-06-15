@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💄</text></svg>">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Karlie Kant</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💄</text></svg>'>
 
   <!-- SEO -->
   <meta name="description" content="Karlie Kant – Berlin's fabulous drag queen for shows, events, and unforgettable moderation. Book now for your party, wedding, or corporate event!">
@@ -88,139 +89,90 @@
       cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="50%" x="50%" dominant-baseline="middle" text-anchor="middle" font-size="24">✨</text></svg>') 16 16, auto;
     }
   }
-  .lang-switch {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1000;
-    font-size: 0.9rem;
-  }
-  .lang-switch span {
-    color: #fff;
-    margin-left: 0.5rem;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  .lang {
-    display: none;
-  }
-  .lang.active {
-    display: block;
 
-    /* SHOW-SECTIONS */
-.show-section {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin: 3rem 0;
-  flex-wrap: wrap;
-}
-
-.show-content {
-  flex: 1;
-  min-width: 300px;
-}
-
-.show-images {
-  flex: 1;
-  min-width: 300px;
-}
-
-/* Einzelnes Bild (für Kantastique) */
-.single-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Bildgrid für mehrere Bilder */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Zwei Spalten immer */
-  gap: 1rem;
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Copyright Text */
-.image-copyright {
-  font-size: 0.8rem;
-  color: #ccc;
-  margin-top: 0.5rem;
-  font-style: italic;
-}
-
-/* Responsive */
-@media (min-width: 600px) {
-  .image-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-}
-
-@media (max-width: 768px) {
   .show-section {
-    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+  }
+
+  .show-content {
+    flex: 1;
+    min-width: 300px;
   }
 
   .show-images {
-    order: -1;
+    flex: 1;
+    min-width: 300px;
   }
-}
 
+  /* Einzelnes Bild (für Kantastique) */
+  .single-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Bildgrid für mehrere Bilder */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten immer */
+    gap: 1rem;
+  }
+
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Copyright Text */
+  .image-copyright {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
+  /* Responsive */
+  @media (min-width: 600px) {
+    .image-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .show-section {
+      flex-direction: column;
+    }
+
+    .show-images {
+      order: -1;
+    }
   }
 </style>
+
+  
 </head>
 <body>
-  <div class="lang-switch">
-    <span id="switch-de">DE</span> | <span id="switch-en">EN</span>
-  </div>
   <div class="container">
     <div class="hero">
       <h1>Karlie Kant</h1>
-      <p class="lang lang-de active">Ich bin Karlie Kant, Dragqueen aus Berlin, established 2017 – immer gut gekleidet, immer gut gelaunt!</p>
-      <p class="lang lang-en">I'm Karlie Kant – drag queen from Berlin, established 2017 – always well-dressed, always in a good mood!</p>
-      <img src="Karlie-Kant-Berlin-Drag-Queen-Host-Header-smaller.webp" alt="Karlie Kant Dragqueen aus Berlin">
+      <p>Ich bin Karlie Kant, Dragqueen aus Berlin, established 2017 – immer gut gekleidet, immer gut gelaunt!</p>
+      <img src="Karlie-Kant-Berlin-Drag-Queen-Host-Header.webp" alt="Karlie Kant Dragqueen aus Berlin">
     </div>
 
-    <!-- Intro- und Begrüßungstexte -->
-<section>
-  <div class="lang lang-de active">
     <h2>Hallöchen!</h2>
-    <p>
-      Ich – Dragqueen, Moderatorin und Entertainerin aus Berlin.<br>
-      Sie planen ein Event? Eine Gala, Firmenfeier, Hochzeit, CSD oder Schiffstaufe?<br>
-      Dann holen Sie sich Glamour, Witz und unvergessliche Unterhaltung auf die Bühne – mit mir.<br>
-      Ob Beyoncé, Céline, Knef, Shirley, Britney oder Whitney – ich verkörpere sie alle.<br><br>
-      Wann ich das nächste Mal live zu sehen bin?
-      <a href="https://linktr.ee/karliekant" style="color: #fff; text-decoration: underline;">✨ Hier ✨</a> geht’s zu den Daten.
-    </p>
-  </div>
-  <div class="lang lang-en">
-    <h2>Hello there!</h2>
-    <p>
-      I'm a drag queen, host, and entertainer from Berlin.<br>
-      Planning an event? Gala, corporate party, wedding, Pride or ship christening?<br>
-      Then bring some glamour, wit and unforgettable entertainment to your stage – with me.<br>
-      Whether it’s Beyoncé, Céline, Knef, Shirley, Britney or Whitney – I bring them all to life.<br><br>
-      Want to know when my next show is?
-      <a href="https://linktr.ee/karliekant" style="color: #fff; text-decoration: underline;">✨ Click here ✨</a> for dates.
-    </p>
-  </div>
-</section>
+    <p>    Ich – Dragqueen, Moderatorin und Entertainerin aus Berlin.<br>
+    Sie planen ein Event? Eine Gala, Firmenfeier, Hochzeit, CSD oder Schiffstaufe?<br>
+    Dann holen Sie sich Glamour, Witz und unvergessliche Unterhaltung auf die Bühne – mit mir.<br>
+    Ob Beyoncé, Céline, Knef, Shirley, Britney oder Whitney – ich verkörpere sie alle.<br><br>
+    Wann ich das nächste Mal live zu sehen bin? 
+    <a href="https://linktr.ee/karliekant" style="color: #fff; text-decoration: underline;">✨ Hier ✨</a> geht’s zu den Daten.</p>
 
-<!-- Shows Section -->
-<section>
-  <div class="lang lang-de active">
-    <h2>Shows</h2>
-  </div>
-  <div class="lang lang-en">
-    <h2>Shows</h2>
-  </div>
-</section>
+<h2>Shows</h2>
 
 <!-- KANTASTIQUE -->
 <div class="show-section">
@@ -232,28 +184,16 @@
     </div>
   </div>
   <div class="show-content">
-    <div class="lang lang-de active">
-      <p><strong>KANTASTIQUE</strong><br>
-      Hertha trifft Haute Couture – und alle flippen aus. Meine erste eigene Show – geboren aus dem Drang, nach der Pandemie Drag Artists in Berlin Auftrittsmöglichkeiten zu bieten. Seitdem verwandeln wir das Keglerheim in Neukölln alle zwei Monate in einen Drag-Hotspot.</p>
-    </div>
-    <div class="lang lang-en">
-      <p><strong>KANTASTIQUE</strong><br>
-      Hertha meets Haute Couture – and the crowd goes wild. My very first show – born from the urge to create opportunities for Berlin drag artists after the pandemic. Since then, we’ve been turning a bowling alley in Neukölln into a drag hotspot every two months.</p>
-    </div>
+    <p><strong>KANTASTIQUE</strong><br>
+    Hertha trifft Haute Couture – und alle flippen aus. Meine erste eigene Show – geboren aus dem Drang, nach der Pandemie Drag Artists in Berlin Auftrittsmöglichkeiten zu bieten. Seitdem verwandeln wir das Keglerheim in Neukölln alle zwei Monate in einen Drag-Hotspot.</p>
   </div>
 </div>
 
 <!-- PROVOKANT -->
 <div class="show-section">
   <div class="show-content">
-    <div class="lang lang-de active">
-      <p><strong>PROVOKANT</strong><br>
-      Saarbrücken – mein queerer Heimathafen (und ich bin die AIDA). Mit Provokant wollte ich etwas von der Energie, die ich durch Drag gefunden habe, in meine Heimat zurücktragen. Unsere Sommer- und Winter-Show im Jules Verne ist heiß begehrt – und hat einen kleinen queeren Kulturboom in der Stadt ausgelöst: etwa mit <a href="https://www.instagram.com/itsdraghabibi" target="_blank">Drag Habibi</a>, dem Show Format meiner Drag-Tochter <a href="https://www.instagram.com/twiga.is.twiga" target="_blank">Twiga</a>.</p>
-    </div>
-    <div class="lang lang-en">
-      <p><strong>PROVOKANT</strong><br>
-      Saarbrücken – my queer hometown harbor (and I’m the cruiseship). With Provokant, I wanted to bring some of the energy I found through drag back to my hometown. Our summer and winter shows at Jules Verne are always packed – and even sparked a little queer culture boom in the city: for example Drag Habibi, the show format by my drag daughter Twiga.</p>
-    </div>
+    <p><strong>PROVOKANT</strong><br>
+    Saarbrücken – mein queerer Heimathafen (und ich bin die AIDA). Mit Provokant wollte ich etwas von der Energie, die ich durch Drag gefunden habe, in meine Heimat zurücktragen. Unsere Sommer- und Winter-Show im Jules Verne ist heiß begehrt – und hat einen kleinen queeren Kulturboom in der Stadt ausgelöst: etwa mit <a href="https://www.instagram.com/itsdraghabibi" target="_blank">Drag Habibi</a>, dem Show Format meiner Drag-Tochter <a href="https://www.instagram.com/twiga.is.twiga" style="color: #fff; text-decoration: underline;"target="_blank">Twiga</a>.</p>
   </div>
   <div class="show-images">
     <div class="image-grid">
@@ -276,38 +216,30 @@
     <div class="image-grid">
       <img src="Berlin-Drag-Queens-Karlie-Kant-Yvonne-Nightstand-Dünn-und-doof-2.webp" 
            alt="Berlin Drag Queens Karlie Kant und Yvonne Nightstand bei Dünn und Doof Show Performance">
+      <!--img src="Berlin-Drag-Queens-Karlie-Kant-Yvonne-Nightstand-Duenn-und-doof-3.webp" 
+           alt="Dünn und Doof Drag Show Berlin mit Karlie Kant und Yvonne Nightstand Comedy Performance"-->
       <img src="Berlin-Drag-Queens-Karlie-Kant-Yvonne-Nightstand-Duenn-und-doof-4.webp" 
            alt="Karlie Kant Yvonne Nightstand Dünn und Doof Berlin Drag Show Entertainment">
+      <!--img src="Berlin-Drag-Queens-Karlie-Kant-Yvonne-Nightstand-Duenn-und-doof-1.webp" 
+           alt="Berlin Drag Queens Dünn und Doof Show Karlie Kant Yvonne Nightstand Brunch Event"-->
     </div>
     <div class="image-copyright">© Greta Stange / Javier Alejandro Cerrada</div>
   </div>
   <div class="show-content">
-    <div class="lang lang-de active">
-      <p><strong>DÜNN & DOOF</strong><br>
-      Ob Märchenwald, Toxic Masculinity, Saints & Sinners oder True Crime – kein Thema ist zu groß für diesen Drag-Fiebertraum. Zusammen mit <a href="https://www.instagram.com/yvonnenightstand" target="_blank">Yvonne Nightstand</a> habe ich Brunch-Editionen, Dinnerevents und sogar eine Show in einer echten Kirche umgesetzt. Wir sind mit dem Format mittlerweile auch über Berlins Grenzen hinaus unterwegs.</p>
-    </div>
-    <div class="lang lang-en">
-      <p><strong>DÜNN & DOOF</strong><br>
-      Whether it's fairy tales, toxic masculinity, saints & sinners, or true crime – no theme is too bold for this fever-dream of a drag show. Together with <a href="https://www.instagram.com/yvonnenightstand" target="_blank">Yvonne Nightstand</a>, I’ve brought this show to brunches, dinner events, and even a real church. We're now touring DÜNN & DOOF beyond Berlin's borders as well.</p>
-    </div>
+    <p><strong>DÜNN & DOOF</strong><br>
+    Ob Märchenwald, Toxic Masculinity, Saints & Sinners oder True Crime – kein Thema ist zu groß für diesen Drag-Fiebertraum. Zusammen mit <a href="https://www.instagram.com/yvonnenightstand" style="color: #fff; text-decoration: underline;" target="_blank">Yvonne Nightstand</a> habe ich Brunch-Editionen, Dinnerevents und sogar eine Show in einer echten Kirche umgesetzt. Wir sind mit dem Format mittlerweile auch über Berlins Grenzen hinaus unterwegs.</p>
   </div>
 </div>
 
 <!-- PLASTIC PRODUCTIONS x KANTASTIQUE -->
 <div class="show-section">
   <div class="show-content">
-    <div class="lang lang-de active">
-      <p><strong>Plastic Productions x Kantastique</strong><br>
-      PPxK war ein einmaliges Crossover zwischen Kunst und Drag, zwischen durchinszenierter Show und ungefiltertem Ausdruck.</p>
-      <p>Plastic Productions wurde von Johanne Björklund Larsen gegründet – einer meiner engsten Freundinnen und einer radikalen Stimme im Bereich Performancekunst. Was sie mit PP begonnen hat, war nie einfach nur Bühne, sondern immer auch Statement.</p>
-      <p>Mit PPxK haben wir genau diesen Geist weitergeführt: ein Abend mit queeren Performer*innen, die nicht nur unterhalten, sondern herausfordern. Drag, Tanz, Körper, Haltung – live, roh, und voller Energie.</p>
-    </div>
-    <div class="lang lang-en">
-      <p><strong>Plastic Productions x Kantastique</strong><br>
-      PPxK was a one-of-a-kind crossover between art and drag, between fully staged spectacle and raw, unfiltered expression.</p>
-      <p>Plastic Productions was founded by Johanne Björklund Larsen – one of my closest friends and a radical voice in performance art. With PPxK, we continued that spirit: a night of queer performers who don’t just entertain – they challenge.</p>
-      <p>Drag, dance, body, stance – live, raw, and full of energy.</p>
-    </div>
+    <p><strong>Plastic Productions x Kantastique</strong><br>
+    PPxK war ein einmaliges Crossover zwischen Kunst und Drag, zwischen durchinszenierter Show und ungefiltertem Ausdruck.</p>
+    
+    <p>Plastic Productions wurde von Johanne Björklund Larsen gegründet – einer meiner engsten Freundinnen und einer radikalen Stimme im Bereich Performancekunst. Was sie mit PP begonnen hat, war nie einfach nur Bühne, sondern immer auch Statement.</p>
+    
+    <p>Mit PPxK haben wir genau diesen Geist weitergeführt: ein Abend mit queeren Performer*innen, die nicht nur unterhalten, sondern herausfordern. Drag, Tanz, Körper, Haltung – live, roh, und voller Energie.</p>
   </div>
   <div class="show-images">
     <div class="image-grid">
@@ -323,44 +255,22 @@
     <div class="image-copyright">© Bela Lehrnickel</div>
   </div>
 </div>
-
-<!-- Booking -->
-<section>
-  <div class="lang lang-de active">
+        
     <h2>Buchen Sie mich</h2>
     <p><strong>Private Veranstaltungen:</strong><br>
-      Geburtstag? Hochzeit? Schiffstaufe? Mit Hammer-Looks, fantastischen Nummern und natürlich Humor sorge ich für Applaus und Abriss – denn jede Party ist besser mit einer Drag Queen.</p>
-    <p><strong>Corporate Events:</strong><br>
-      Firmenfeier, Podiumsdiskussion, Produktlaunch oder Team-Event? Ich bringe Ihre Gäste zum Lachen, Staunen und Denken – ob als charmante Moderatorin, Icebreaker oder Showeinlage.</p>
-    <p><strong>Technik & Buchung:</strong><br>
-      Keine Technik vor Ort? Kein Problem! Ich kann Sound, Mikrofon, Licht und sogar eine mobile Bühne mitbringen. Sie kümmern sich um Ihre Gäste – ich um den Rest.</p>
-  </div>
-  <div class="lang lang-en">
-    <h2>Book Karlie Kant</h2>
-    <p><strong>Private Events:</strong><br>
-      Birthday? Wedding? Ship christening? With killer looks, fabulous numbers, and humor I can bring the extra to your event! Because every party is better with a drag queen.</p>
-    <p><strong>Corporate Events:</strong><br>
-      Company party, panel talk, product launch or team event? Looking for workshops or creative warm-ups for your team? I’ll make your guests laugh, marvel, and think – as a charming host or show act.</p>
-    <p><strong>Tech & Equipment:</strong><br>
-      No tech? No problem. I can bring my own setup – for up to 100 guests. You focus on the guests – I’ll handle the show.</p>
-  </div>
-</section>
+    Geburtstag? Hochzeit? Schiffstaufe? Mit Hammer-Looks, fantastischen Nummern und natürlich Humor sorge ich für Applaus und Abriss – denn jede Party ist besser mit einer Drag Queen.</p>
 
-<!-- Advocacy -->
-<section>
-  <div class="lang lang-de active">
+    <p><strong>Corporate Events:</strong><br>
+    Firmenfeier, Podiumsdiskussion, Produktlaunch oder Team-Event? Ich bringe Ihre Gäste zum Lachen, Staunen und Denken – ob als charmante Moderatorin, Icebreaker oder Showeinlage.</p>
+
+    <p><strong>Technik & Buchung</strong><br>
+      
+<p>Keine Technik vor Ort? Kein Problem! Ich kann Sound, Mikrofon, Licht und sogar eine mobile Bühne mitbringen.
+<p>Sie kümmern sich um Ihre Gäste – ich um den Rest.</p>
+
     <h2>Engagement</h2>
     <p>Ich moderiere regelmäßig das Rahmenprogramm des CSD Saarbrücken im Auftrag des LSVD Saar. Neben meinem “Dayjob” als Projektleiterin in einem internationalen Medienunternehmen engagiere ich mich dort in der LGBTIQA+ AG – und kämpfe für Sichtbarkeit und Gleichstellung, intern wie extern. Seit meiner Anti-Bias-Ausbildung 2020 arbeite ich zudem mit der Agentur IN-VISIBLE zusammen und gebe Workshops rund um Diversity und diskriminierungssensibles Arbeiten.</p>
-  </div>
-  <div class="lang lang-en">
-    <h2>Advocacy & Engagement</h2>
-    <p>I regularly host the stage program for Saarbrücken Pride on behalf of LSVD Saar. Outside my “day job” as a project manager at an international media company, I’m active in our LGBTIQA+ task force – fighting for visibility and equality. Since my anti-bias training in 2020, I’ve also been working with the agency IN-VISIBLE, offering workshops on diversity and inclusive work culture.</p>
-  </div>
-</section>
 
-<!-- Contact -->
-<section>
-  <div class="lang lang-de active">
     <h2>Kantakt</h2>
     <form action="https://formspree.io/f/xblonqzw" method="POST">
       <input type="text" name="name" placeholder="Ihr Name" required />
@@ -369,21 +279,9 @@
       <button type="submit">Absenden</button>
     </form>
     <p style="margin-top: 2rem;">Oder schreiben Sie mir auf Instagram: <a href="https://www.instagram.com/karliekant" target="_blank">@karliekant</a></p>
-  </div>
-  <div class="lang lang-en">
-    <h2>Contact</h2>
-    <form action="https://formspree.io/f/xblonqzw" method="POST">
-      <input type="text" name="name" placeholder="Your name" required />
-      <input type="email" name="email" placeholder="Your email" required />
-      <textarea name="message" placeholder="Your message" rows="4" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p style="margin-top: 2rem;">Or reach out on Instagram: <a href="https://www.instagram.com/karliekant" target="_blank">@karliekant</a></p>
-  </div>
-</section>
 
-<!-- Gallery Hinweis (Bilder sind sprachneutral) -->
-<section id="gallery" class="container" style="margin-top: 4rem;">
+    <section id="gallery" class="container" style="margin-top: 4rem;">
+
   <div style="display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem;">
     <img src="webp_output/Karlie-Kant-Berlin-Drag-Queen-Host-1.webp" alt="Karlie Kant Berlin Drag Queen Host – Big Hair Look">
     <img src="webp_output/Karlie-Kant-Berlin-Drag-Queen-Host-2.webp" alt="Karlie Kant Berlin Drag Queen Host – White Cut-Out Dress">
@@ -394,23 +292,7 @@
     <img src="webp_output/Karlie-Kant-Berlin-Drag-Queen-Host.webp" alt="Karlie Kant Berlin Drag Queen Host – Leather Fantasy Look">
   </div>
 </section>
-
+    
   </div>
-  <script>
-    const switchDe = document.getElementById('switch-de');
-    const switchEn = document.getElementById('switch-en');
-    const langDeElements = document.querySelectorAll('.lang-de');
-    const langEnElements = document.querySelectorAll('.lang-en');
-
-    switchDe.onclick = () => {
-      langDeElements.forEach(el => el.classList.add('active'));
-      langEnElements.forEach(el => el.classList.remove('active'));
-    }
-
-    switchEn.onclick = () => {
-      langEnElements.forEach(el => el.classList.add('active'));
-      langDeElements.forEach(el => el.classList.remove('active'));
-    }
-  </script>
 </body>
 </html>
